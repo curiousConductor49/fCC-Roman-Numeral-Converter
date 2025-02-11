@@ -1,0 +1,103 @@
+:root {
+    --background-main: #2F4858;
+    --background-secondary: #33658A;
+    --accent-blue: #55DDE0;
+    --accent-orange: #F26419;
+    --accent-yellow: #F6AE2D;
+    --text: #ffffff;
+  }
+  
+  body {
+    background-image: linear-gradient(var(--background-main), var(--background-secondary), var(--accent-blue));
+    color: var(--text);
+  }
+  
+  #intro {
+    background-color: var(--background-main);
+    border: 5px dashed var(--accent-yellow);
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 500px;
+    min-width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #intro h1 {
+    font-family: "Jersey 15", "Courier New";
+    font-size: 5rem;
+    line-height: 0.5rem;
+  }
+  
+  #intro h1::first-letter {
+    color: var(--accent-orange);
+  }
+  
+  #intro h2 {
+    font-family: "Micro 5 Charted", "Lucida Sans Typewriter";
+    font-size: 2rem;
+    border: 3px dotted var(--accent-orange);
+  }
+  
+  .highlight {
+    color: var(--accent-yellow);
+    font-weight: bold;
+  }
+  
+  #content-container, #user-input, #user-convert {
+    box-sizing: border-box;
+    font-family: "Chakra Petch", Consolas;
+    padding: 15px;
+  }
+  
+  #content-container {
+    margin: 30px auto;
+    border: 8px solid var(--accent-orange);
+    max-width: 650px;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #top-box {
+    display: flex;
+  }
+  
+  #user-input, #user-convert {
+    border: 3px solid var(--text);
+    font-size: 35px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #number, #convert-btn {
+    margin-top: 15px;
+    height: 60px;
+    font-size: 25px;
+    min-width: 200px;
+    background-color: var(--background-secondary);
+    color: var(--text); 
+    border: 3px solid var(--accent-yellow);
+  }
+  
+  #output {
+    font-family: "Jersey 15", "Courier New";
+    font-size: 60px;
+    margin: 30px auto;
+    padding: 5px;
+    text-align: center;
+    min-width: 200px;
+  }
+  
+  @media (max-width: 600px) {
+    #top-box {
+      flex-direction: column;
+      margin: auto;
+    }
+  }  
